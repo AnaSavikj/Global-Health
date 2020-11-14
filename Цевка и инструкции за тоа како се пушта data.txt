@@ -1,0 +1,7 @@
+1.Цевката со која ги преземавме сите аптеки во Македонија и истите се зачувуваме во CSV file:
+
+-osmfilter macedonia-latest.osm --keep="amenity=pharmacy" | osmconvert64-0.8.8p.exe - --all-to-nodes --csv="@id @lon @lat name" --csv-headline --csv-separator="," -o="test.csv"
+
+2.Се користат osmfilter и osmconvert. Osmfilter.exe и osmconvert64-0.8.8p.exe треба да се во фолдерот од кој се повикува наредбата. 
+
+
