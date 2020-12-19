@@ -136,6 +136,14 @@
                     <a  style="color:white" class="nav-link active" href="/jazik/mk">MK</a>
                 </div>
 
+                <div style="  width: 50px;height: 40px; text-align: center; " th:if="${session.en==null}" class="nav-item m-auto">
+                    <a style="color: white ;" class="nav-link active" href="/help">Помош</a>
+                </div>
+
+                <div style="  width: 50px;height: 40px; text-align: center"  th:if="${session.en!=null}" class="nav-item m-auto">
+                    <a  style="color:white ;"  class="nav-link active" href="/help">Help</a>
+                </div>
+
             </form>
         </div>
     </div>
