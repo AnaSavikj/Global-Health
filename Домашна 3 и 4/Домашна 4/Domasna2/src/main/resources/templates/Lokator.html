@@ -50,15 +50,18 @@
         var zumot;
         if(zafokus==null)
         {
-            zumot=9;
+            zumot=13;
             console.log(zumot);
+            myval[myval.length-1].lat=lo1;
+            myval[myval.length-1].lon=lo2;
+
         }
         else{
             zumot=12;
             console.log(zumot)
 
         }
-console.log(zumot);
+
 
         const mymap = L.map('issMap').setView([myval[myval.length-1].lat,myval[myval.length-1].lon], zumot);
 
@@ -156,7 +159,7 @@ console.log(zumot);
 
         //stavanje od baza
         var niziste=[];
-        for(var w=0;w<myval.length;w++) {
+        for(var w=0;w<myval.length-1;w++) {
             niziste[w]=  L.marker([myval[w].lat, myval[w].lon]).addTo(mymap);
             niziste[w].bindPopup("Aptekata se naogja na " + String(niza2[w]) + " KM");
 

@@ -3,6 +3,7 @@ package com.example.demo.web.Controllers.Controller;
 import com.example.demo.Service.AuthService;
 import com.example.demo.model.exceptions.InvalidArgumentsException;
 import com.example.demo.model.exceptions.PasswordsDoNotMatchException;
+import com.example.demo.model.exceptions.UsernameAlreadyExistsException;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -48,10 +49,9 @@ public class Register {
                            @RequestParam String email
     ) {
         try{
-            System.out.println(pol);
             this.authService.register(username, password, repeatedPassword, name, surname,telefon,pol,email);
             return "redirect:/login";
-        } catch (InvalidArgumentsException | PasswordsDoNotMatchException exception) {
+        } catch (InvalidArgumentsException | UsernameAlreadyExistsException exception) {
             return "redirect:/register?error=Korisnickoto ime vekje postoi";
         }
     }
