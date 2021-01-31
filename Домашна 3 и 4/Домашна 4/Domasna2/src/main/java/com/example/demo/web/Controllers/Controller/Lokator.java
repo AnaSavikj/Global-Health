@@ -14,6 +14,10 @@ import java.util.List;
 
 @Controller
 @RequestMapping("/lokator")
+
+//ovoj kontroler ja otvara stranicata Lokator i isto taka sluzi za prebaruvanje na aptekite
+//na mapata na istata stranica, vo odnos na lokacijata na korisnikot gi prikazuva najbliskite apteki do nego.
+
 public class Lokator {
 
     private final AptekaService aptekaService;

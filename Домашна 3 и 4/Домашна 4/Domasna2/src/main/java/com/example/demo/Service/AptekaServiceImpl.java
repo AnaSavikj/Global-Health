@@ -15,18 +15,21 @@ public class AptekaServiceImpl  implements AptekaService{
         this.siteApteki = siteApteki;
 
     }
-
+    //funkcijata gi lista site apteki
     @Override
     public List<Apteka> findallPharmacy() {
      return  siteApteki.findAll();
     }
 
+    //gi prebaruva aptekite spored prebaraniot tekst
     @Override
     public List<Apteka> findbyC(String text) {
        return siteApteki.find(text);
     }
 
-    public  String convertCyrilic(String message){
+
+     //funkcijata convertCyrilic sluzi za konvertiranje od latinica na kirlica
+     public  String convertCyrilic(String message){
         String [] niza=message.split("");
         String izlez="";
 
@@ -46,6 +49,7 @@ public class AptekaServiceImpl  implements AptekaService{
         return izlez;}
     }
 
+    //funkcijata sluzi za zolemuvanje na prvata bukva od prebaraniot tekst
     @Override
     public String ToUpperCase(String s) {
         String [] niza=s.split("");
@@ -58,7 +62,7 @@ public class AptekaServiceImpl  implements AptekaService{
         return cc;
     }
 
-
+//gi pronaogja aptekite spored id
     @Override
     public Apteka findbyId(Long id) {
         Apteka a= new Apteka();

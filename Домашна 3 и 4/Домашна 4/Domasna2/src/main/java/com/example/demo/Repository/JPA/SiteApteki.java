@@ -5,7 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
-
+//interfejs do bazata na podatoci za Apteki
 public interface SiteApteki extends JpaRepository<Apteka,Long> {
 
 

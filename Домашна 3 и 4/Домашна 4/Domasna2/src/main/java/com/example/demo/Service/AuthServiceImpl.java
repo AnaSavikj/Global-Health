@@ -16,7 +16,7 @@ public class AuthServiceImpl implements AuthService {
     public AuthServiceImpl(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
-
+//funkcija za najava
     @Override
     public Userr login(String username, String password) {
         if (username==null || username.isEmpty() || password==null || password.isEmpty()) {
@@ -25,7 +25,7 @@ public class AuthServiceImpl implements AuthService {
         return userRepository.findByUsernameAndPassword(username,
                 password).orElseThrow(InvalidUserCredentialsException::new);
     }
-
+//funkcija za registracija
     @Override
     public Userr register(String username, String password, String repeatPassword, String name, String surname,String telefon,
     String pol, String email) {

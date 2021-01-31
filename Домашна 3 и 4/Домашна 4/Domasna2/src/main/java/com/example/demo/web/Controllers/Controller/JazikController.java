@@ -10,6 +10,9 @@ import javax.servlet.http.HttpSession;
 
 @Controller
 @RequestMapping("/jazik")
+
+//ovoj kontroler e namenet za promena na jazikot od makedonski vo angliski i obratno.
+
 public class JazikController {
 
     @GetMapping("/en")

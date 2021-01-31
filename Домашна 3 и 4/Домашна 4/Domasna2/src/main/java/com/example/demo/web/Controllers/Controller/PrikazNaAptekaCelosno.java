@@ -12,6 +12,10 @@ import javax.servlet.http.HttpServletRequest;
 
 @Controller
 @RequestMapping("/show")
+
+//ovoj kontroler gi dava celosnite informacii za odredena apteka, za koja shto korisnikot
+//saka da doznae povekje informacii.
+
 public class PrikazNaAptekaCelosno {
     private final AptekaService aptekaService;
 

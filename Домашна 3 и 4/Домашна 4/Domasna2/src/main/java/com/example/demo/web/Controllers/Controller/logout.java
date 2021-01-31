@@ -8,6 +8,9 @@ import javax.servlet.http.HttpSession;
 
 @Controller
 @RequestMapping("/logout")
+
+//ovoj kontroler sluzi za odjavuvanje od samata aplikacija.
+
 public class logout {
 
     @GetMapping

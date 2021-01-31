@@ -12,6 +12,12 @@ import java.util.List;
 
 @Controller
 @RequestMapping("/search")
+
+//ovoj kontroler sluzi za prebaruvanje na bilo shto vo samata aplikacija
+//nasekade vo nea. (delot Search koj se naogja vo headerot na samata aplikacija i
+//e dostapen na sekoja od stranicite vo aplikacijata).
+
+
 public class search {
     private final AptekaService aptekaService;
 
@@ -20,6 +26,9 @@ public class search {
     }
 
 
+    //funkcijata pokategorija ovozmozuva na korisnikot prebaruvanje na bilo shto so
+    //garantiranje na siguren rezultat duri i po vnesena kratenka (primer sk)
+    //istata pri autocomplete mu dava moznosti za izbor na korisnikot.
     @GetMapping
     public String pokategorija(Model model,HttpServletRequest request)
     {

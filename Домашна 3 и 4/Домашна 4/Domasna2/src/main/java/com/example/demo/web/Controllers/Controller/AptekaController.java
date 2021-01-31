@@ -13,6 +13,9 @@ import javax.servlet.http.HttpSession;
 @Controller
 @RequestMapping({"/home",""})
 
+//so ovoj kontroler se otvora pocetnata stranica na aplikacijata na jazikot na koj shto go ima izbrano
+//samiot korisnik, kako i listanjeto na site apteki na stratana Apteki.
+
 public class AptekaController {
     private final AptekaService aptekaService;
 

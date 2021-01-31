@@ -13,6 +13,10 @@ import javax.servlet.http.HttpServletRequest;
 
 @Controller
 @RequestMapping("/login")
+
+//ovoj kontroler sluzi za otvoranje na stranicata za najava na korisnikot i isto taka
+//funkcijata login ja regulira istata taa najava.
+
 public class Login {
     private final AuthService authService;
 

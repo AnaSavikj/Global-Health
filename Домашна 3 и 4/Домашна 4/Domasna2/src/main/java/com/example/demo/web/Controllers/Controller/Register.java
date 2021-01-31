@@ -15,6 +15,13 @@ import javax.servlet.http.HttpServletRequest;
 
 @Controller
 @RequestMapping("/register")
+
+//ovoj kontroler ja otvara stranicata za registracija na korisnik i funkcijata
+//register go kontrolira registriranjeto na samiot korisnik i dokolku toa e ne uspeshno
+//go redirektira povtorno kon istata stranica za registracija, namesto kon stranicata
+//za najava. Dokolku vnesenoto korisnicko ime vekje postoi se pojavuva poraka za greshka
+//i moznost za izbiranje na novo korisnicko ime od strana na korisnikot.
+
 public class Register {
     private final AuthService authService;
 

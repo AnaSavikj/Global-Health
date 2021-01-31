@@ -7,6 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/help")
+
+//ovoj kontroler se odnesuva na stranicata za Pomosh koja objasnuva kako se koristi samota aplikacija.
+
 public class help {
 
     @GetMapping
